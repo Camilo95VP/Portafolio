@@ -14,8 +14,8 @@ html {
   .img-profile{
     max-width: 40vh;
     width: 60vh;
-    margin: 20px;
-
+    margin: 10px;
+    border-radius: 50%;
 }
 
   .cont-btn {
