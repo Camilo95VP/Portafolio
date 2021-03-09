@@ -1,0 +1,76 @@
+body, html {
+    font-family: "Helvetica", Arial, sans-serif;
+    font-size: 18px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, steelblue, #294d6b);
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: row;
+    max-width: 940px;
+    margin-left: -20px;
+    perspective: 1400px;
+  }
+  .cards:hover .card {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+  .cards .card {
+    perspective: 500px;
+    width: 33%;
+    padding: 0px;
+    margin-left: 20px;
+    background: white;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.1)));
+  }
+  .cards .card .body h4 {
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+  }
+  .cards .card:hover {
+    transform: scale(1.2);
+    transform: rotateY(15deg);
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .cards .card:hover .body h4 {
+    transform: scale(1.1) rotateX(-25deg);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    background: steelblue;
+  }
+  .cards .card h4 {
+    background: #699bc4;
+    color: white;
+    display: block;
+    padding: 1rem;
+    font-size: 18px;
+    margin: 0;
+  }
+  .cards .card p {
+    color: #666;
+    padding: 0 1rem 1rem 1rem;
+  }
+  
+  .icons {
+    display: inline-flex;
+    margin-left: auto;
+    position: fixed;
+    bottom: 40px;
+  }
+  .icons a {
+    transition: all 0.2s ease-in-out;
+    padding: 0.2rem 0.6rem;
+    color: #ccc !important;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  .icons a:hover {
+    color: white;
+    text-shadow: 0 0 30px white;
+  }

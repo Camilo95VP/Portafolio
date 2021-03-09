@@ -7,34 +7,50 @@
 body {
   font-family: Merriweather, serif;
 }
-.theme-switch__input {
-	display: flex;
-	display: inline-block;
-}
+
 
 label,
-main {
+main
+{
   background: var(--bg, white);
   color: var(--text, black);
 }
-
+@media only screen and (min-width:500px) and (max-width:2080px){
+  .container{
+    left: 100px;
+  }
+  h1{
+    font-size: 50px;
+  }
+  p{
+    font-size: 25px;
+  }
+}
+.container{
+  right: 50px;
+  position: absolute;
+  top: 180px;
+}
 main {
   --gradDark: hsl(144, 100%, 89%);
   --gradLight: hsl(42, 94%, 76%);
   background: linear-gradient(to bottom, var(--gradDark), var(--gradLight));
-  padding: 220px 40px 40px 40px;
+  
   min-height: 100vh;
   text-align: center;
+  
 }
-@media (min-width: 768px){
+@media (min-width: 770px){
 	.btn{
-		width: 250px;
-		margin: 0 auto;
+		font-size: 80px;
+		
 	}
 }
 .btn,
 .btn2,
-a {
+.boton {
+  margin: 0 auto;
+  width: 250px;
 	height: 60px;
 	font-size: 30px;
 	text-align: center;
@@ -42,7 +58,7 @@ a {
 	color: rgba(255,255,255,0.9);
 	border-radius: 50px;
 	background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
-	background-size: 600%;
+	background-size: 500%;
 	-webkit-animation: anime 16s linear infinite;
 			animation: anime 16s linear infinite;
 			cursor: pointer;
@@ -84,10 +100,13 @@ a {
 }
 
 .theme-switch__input:checked ~ main,
-.theme-switch__input:checked ~ label {
-  --text: white;
+.theme-switch__input:checked ~ label
+{
+  --text: rgb(255, 255, 255); 
 }
-
+.theme-switch__input:checked ~ .fa-facebook{
+  color: #fff;
+}
 .theme-switch__input:checked ~ main {
   --gradDark: hsl(198, 44%, 11%);
   --gradLight: hsl(198, 39%, 29%);
@@ -107,6 +126,12 @@ a {
 }
 .theme-switch__input:hover + .theme-switch__label span::after, .theme-switch__input:focus + .theme-switch__label span::after {
   background-color: #d4ebf2;
+}
+.theme-switch__input:hover + .fa-facebook, .theme-switch__input:focus + .fa-facebook{
+  color: black;
+}
+.theme-switch__input:hover + .fa-facebook span::after, .theme-switch__input:focus + .fa-facebook span::after{
+  color: black;
 }
 .theme-switch__label {
   padding: 20px;
@@ -165,6 +190,37 @@ a {
 .theme-switch__input:checked ~ .theme-switch__label::after {
   color: turquoise;
 }
+.theme-switch__input:checked ~ .fa-facebook::before{
+  color: black;
+}
+.theme-switch__input:checked ~ .fa-facebook::after{
+  color: white;
+}
 .theme-switch__input:checked ~ .theme-switch__label span::after {
   transform: translate3d(70px, 0, 0);
+}
+.icons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  margin-top: 200px;
+}
+.fa-facebook,
+.fa-github,
+.fa-instagram,
+.fa-linkedin,
+.fa-twitter,
+.fa-youtube{
+  font-size: 40px;
+  color: black;
+}
+
+.icons a {
+  transition: all 0.2s ease-in-out;
+  color: #ccc !important;
+  text-decoration: none;
+}
+.icons a:hover {
+  color: white;
+  text-shadow: 0 0 30px white;
 }

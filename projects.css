@@ -24,6 +24,14 @@ body {
     filter: contrast(120%);
     background-color: black;
 }
+.titulo{
+    
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 300px;
+}
+
 
 .container {
     width: 100%;
