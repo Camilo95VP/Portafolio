@@ -25,6 +25,25 @@ main
   p{
     font-size: 25px;
   }
+  .icons {
+    display: block;
+    margin: 200px auto;
+    width: 80vh;
+}
+}
+@media only screen and (min-width:500px) and (max-width:1125px){
+  .icons {
+    display: block;
+    margin: 200px auto;
+    width: 50vh;
+}
+}
+@media only screen and (min-width:400px) and (max-width:730px){
+  .icons {
+    display: block;
+    margin: 200px auto;
+    width: 30vh;
+}
 }
 .container{
   right: 50px;
@@ -38,13 +57,23 @@ main {
   
   min-height: 100vh;
   text-align: center;
-  
 }
+
 @media (min-width: 770px){
 	.btn{
 		font-size: 80px;
 		
 	}
+}
+.apellido-cont{
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  justify-content: center;
+}
+.apellido {
+  color: orange;
+  
 }
 .btn,
 .btn2,
@@ -55,15 +84,23 @@ main {
 	font-size: 30px;
 	text-align: center;
 	line-height: 60px;
-	color: rgba(255,255,255,0.9);
+	color: rgba(0, 0, 0, 0.9);
 	border-radius: 50px;
-	background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+	background: linear-gradient(-45deg, #ff643dfb, #ff3d77a8, #338bfffa, #3cf0c6);
 	background-size: 500%;
 	-webkit-animation: anime 16s linear infinite;
 			animation: anime 16s linear infinite;
 			cursor: pointer;
 			text-decoration: none;
+      border: 2px solid;
+      
   }
+  .about{
+    transition: all 1s;
+  }
+  .about:hover{
+  font-size: 40px;
+}
 .btn2 {
 	position: absolute;
 	margin-top: -70px;
@@ -137,8 +174,8 @@ main {
   padding: 20px;
   margin:60px 120px;
   transition: background-color 200ms ease-in-out;
-  width: 120px;
-  height: 50px;
+  width: 110px;
+  height: 10px;
   border-radius: 50px;
   text-align: center;
   background-color: slateGray;
@@ -172,8 +209,8 @@ main {
   position: absolute;
   top: calc(100% + 15px);
   left: 5px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   content: "";
   border-radius: 50%;
   background-color: lightBlue;
@@ -199,11 +236,17 @@ main {
 .theme-switch__input:checked ~ .theme-switch__label span::after {
   transform: translate3d(70px, 0, 0);
 }
+.entrada{
+    background-color: black;
+    max-width: 100vh;
+    height: 1.8px;
+    margin: 50px auto;
+}
 .icons {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  align-items: center;
-  margin-top: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
 }
 .fa-facebook,
 .fa-github,

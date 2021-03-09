@@ -30,8 +30,14 @@ body {
     text-align: center;
     margin: 0 auto;
     margin-top: 300px;
+    
 }
-
+.titulo1{
+    transition: all 1s;
+}
+.titulo1:hover{
+    font-size: 40px;
+}
 
 .container {
     width: 100%;
