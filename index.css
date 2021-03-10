@@ -6,15 +6,18 @@
 
 body {
   font-family: Merriweather, serif;
+  background-color: #FFE53B;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);
 }
 
 
 label,
 main
 {
-  background: var(--bg, white);
+  
   color: var(--text, black);
 }
+
 @media only screen and (min-width:500px) and (max-width:2080px){
   .container{
     left: 100px;
@@ -51,10 +54,7 @@ main
   top: 180px;
 }
 main {
-  --gradDark: hsl(144, 100%, 89%);
-  --gradLight: hsl(42, 94%, 76%);
   background: linear-gradient(to bottom, var(--gradDark), var(--gradLight));
-  
   min-height: 100vh;
   text-align: center;
 }
@@ -72,7 +72,7 @@ main {
   justify-content: center;
 }
 .apellido {
-  color: orange;
+  color: #ffffff;
   
 }
 .btn,
@@ -81,13 +81,14 @@ main {
   margin: 0 auto;
   width: 250px;
 	height: 60px;
-	font-size: 30px;
+	font-size: 25px;
 	text-align: center;
 	line-height: 60px;
 	color: rgba(0, 0, 0, 0.9);
 	border-radius: 50px;
-	background: linear-gradient(-45deg, #ff643dfb, #ff3d77a8, #338bfffa, #3cf0c6);
-	background-size: 500%;
+	background: linear-gradient(-150deg, #fe6739   20%, rgb(216, 144, 28)  20%);
+  box-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
+	background-size: 600%;
 	-webkit-animation: anime 16s linear infinite;
 			animation: anime 16s linear infinite;
 			cursor: pointer;
@@ -98,9 +99,6 @@ main {
   .about{
     transition: all 1s;
   }
-  .about:hover{
-  font-size: 40px;
-}
 .btn2 {
 	position: absolute;
 	margin-top: -70px;
@@ -172,7 +170,7 @@ main {
 }
 .theme-switch__label {
   padding: 20px;
-  margin:45px 120px;
+  margin:60px 120px;
   transition: background-color 200ms ease-in-out;
   width: 110px;
   height: 10px;
@@ -191,7 +189,7 @@ main {
   content: "☼";
   right: 100%;
   margin-right: 10px;
-  color: orange;
+  color: #fe8a39;
 }
 .theme-switch__label::after {
   content: "☾";
@@ -255,7 +253,7 @@ main {
 .fa-twitter,
 .fa-youtube{
   font-size: 40px;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .icons a {

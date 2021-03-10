@@ -32,13 +32,6 @@ body {
     margin-top: 300px;
     
 }
-.titulo1{
-    transition: all 1s;
-}
-.titulo1:hover{
-    font-size: 40px;
-}
-
 .container {
     width: 100%;
     height: 100%;
