@@ -19,7 +19,7 @@ body {
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.4);
   padding: 25px;
   border-radius: 25px;
-  height: 400px;
+  height: 490px;
   transition: all 0.3s;
 }
 .fa-map-marker-alt{
@@ -39,7 +39,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .blog-slider {    
-    height: 750px;
+    height: 950px;
     padding: 10px;
   }
 }
@@ -119,12 +119,16 @@ body {
 .blog-slider__img {
   width: 300px;
   flex-shrink: 0;
-  height: 300px;
   background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
   box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
   border-radius: 20px;
   transform: translateX(-80px);
   overflow: hidden;
+}
+@media screen and (max-width: 768px){
+  .blog-slider__img{
+    margin: 75px;
+  }
 }
 .blog-slider__img:after {
   position: absolute;
@@ -166,7 +170,7 @@ body {
 @media screen and (max-width: 768px) {
   .blog-slider__content {
     margin-bottom: 40px;
-    margin-top: -100px;
+    margin-top: -290px;
     text-align: center;
     padding: 0 30px;
   }
@@ -278,7 +282,8 @@ body {
   background-color: black;
   max-width: 100vh;
   height: 2px;
-  margin: 50px auto;
+  position: relative;
+  margin-top: 60px;
 }
 .icons {
       display: flex;
@@ -305,6 +310,19 @@ text-decoration: none;
 color: white;
 text-shadow: 0 0 30px white;
 }
+.cont-icons a{
+  margin-top: 60px;
+}
 .cont-icons{
-  margin-top: 140px;
+  height: 50px;
+}
+@media screen and (max-width: 768px){
+  .fa-facebook,
+.fa-github,
+.fa-instagram,
+.fa-linkedin,
+.fa-twitter,
+.fa-youtube{
+color: rgb(0, 0, 0);
+}
 }
