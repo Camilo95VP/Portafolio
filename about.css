@@ -212,7 +212,7 @@ body {
   border-radius: 50px;
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
+
   justify-content: center;
   text-align: center;
   letter-spacing: 1px;
@@ -328,7 +328,7 @@ text-shadow: 0 0 30px white;
 .fa-linkedin,
 .fa-twitter,
 .fa-youtube{
-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
 }
 
 }
