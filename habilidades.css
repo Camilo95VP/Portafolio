@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient( #FFE53B 0%, #fd3838);
+  min-height: 130vh;
+  font-family: "Fira Sans", sans-serif;
+}
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    top: 650px;
+    position: relative;
+}
+.left,
+.right{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.arrows i, a{
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: black;
+}
+.arrows i:hover{
+    text-shadow: 0 0 30px white
+}
+.imgs-lenguajes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+.html img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.css img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.javascript img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px){
+    .imgs-lenguajes{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+        top: 0;
+    }
+}
+.imgs-tecnologias{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+}
+.react img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.node img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.bootstrap img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.git img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer
+}
+@media only screen and (max-width: 768px){
+    .imgs-tecnologias{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+        top: 0;
+    }
+}

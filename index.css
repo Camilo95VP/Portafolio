@@ -1,12 +1,13 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: Merriweather, serif;
+  font-family: "Fira Sans", sans-serif;
   background-color: #FFE53B;
   background-image: linear-gradient( #FFE53B 0%, #fd3838);
 }
@@ -81,22 +82,25 @@ main {
 .boton {
   margin: 0 auto;
   width: 250px;
-	height: 60px;
-	font-size: 25px;
+  font-size: 25px;
 	text-align: center;
 	line-height: 60px;
 	color: rgba(0, 0, 0, 0.9);
 	border-radius: 50px;
  /* background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);*/
  background-color: #fff;
-  box-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
 	background-size: 600%;
 	-webkit-animation: anime 16s linear infinite;
 			animation: anime 16s linear infinite;
 			cursor: pointer;
 			text-decoration: none;   
-      border: 2px solid;
+      margin-top: 80px;
+      transition: all 0.2s ease-in-out;
+  color: rgb(0, 0, 0) !important;
+  box-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
+
   }
+
   .about{
     transition: all 1s;
   }
@@ -106,6 +110,7 @@ main {
 	z-index: -1;
 	filter: blur(30px);
 	opacity: 0.8;
+  
   }
   @-webkit-keyframes anime {
 	0% {
@@ -239,7 +244,13 @@ main {
     background-color: black;
     max-width: 100vh;
     height: 2px;
-    margin: 50px auto;
+    margin: 80px auto;
+}
+@media screen and (max-width: 768px){
+  .entrada{
+  position: relative;
+  top: 30px;
+}
 }
 .icons {
         display: flex;
@@ -249,14 +260,27 @@ main {
 }
 .fa-facebook,
 .fa-github,
-.fa-instagram,
+.fa-whatsapp,
 .fa-linkedin,
 .fa-twitter,
 .fa-youtube{
   font-size: 40px;
   color: rgb(255, 255, 255);
 }
-
+.fa-facebook{
+  color:  #3b5998;
+}
+.fa-github{
+  color: #171515;
+}
+.fa-whatsapp{
+  color: #00bb2d;
+}
+.linkedin-cont{
+  background-color: #0e76a8;
+  padding: 3.5px;
+  border-radius: 20%;
+}
 .icons a {
   transition: all 0.2s ease-in-out;
   color: #ccc !important;
@@ -266,3 +290,4 @@ main {
   color: white;
   text-shadow: 0 0 30px white;
 }
+

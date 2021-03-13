@@ -21,6 +21,7 @@ body {
   border-radius: 25px;
   height: 490px;
   transition: all 0.3s;
+  top: 20px;
 }
 .fa-map-marker-alt{
   color: rgb(255, 136, 0);
@@ -39,8 +40,9 @@ body {
 }
 @media screen and (max-width: 768px) {
   .blog-slider {    
-    height: 950px;
+    height: 980px;
     padding: 10px;
+    top: 70px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -209,7 +211,6 @@ body {
   padding: 15px 35px;
   border-radius: 50px;
   color: #fff;
-  box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
   text-decoration: none;
   font-weight: 500;
   justify-content: center;
@@ -284,6 +285,8 @@ body {
   height: 2px;
   position: relative;
   margin-top: 60px;
+  position: relative;
+      top: 34px;
 }
 .icons {
       display: flex;
@@ -293,7 +296,7 @@ body {
 }
 .fa-facebook,
 .fa-github,
-.fa-instagram,
+.fa-whatsapp,
 .fa-linkedin,
 .fa-twitter,
 .fa-youtube{
@@ -305,6 +308,8 @@ color: rgb(255, 255, 255);
 transition: all 0.2s ease-in-out;
 color: #ccc !important;
 text-decoration: none;
+position: relative;
+top: 30px;
 }
 .icons a:hover {
 color: white;
@@ -319,10 +324,56 @@ text-shadow: 0 0 30px white;
 @media screen and (max-width: 768px){
   .fa-facebook,
 .fa-github,
-.fa-instagram,
+.fa-whatsapp,
 .fa-linkedin,
 .fa-twitter,
 .fa-youtube{
 color: rgb(0, 0, 0);
 }
+
+}
+@media only screen and (max-width: 768px){
+  .arrows{
+    z-index: 100;
+    margin-top: 400px;
+  }
+}
+.fa-facebook{
+  color:  #3b5998;
+}
+.fa-github{
+  color: #171515;
+}
+.fa-whatsapp{
+  color: #00bb2d;
+}
+.linkedin-cont{
+  background-color: #0e76a8;
+  padding: 3.5px;
+  border-radius: 20%;
+}
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  top: 650px;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+.left,
+.right{
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.arrows i, a{
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: black;
+}
+.arrows i:hover{
+  text-shadow: 0 0 30px white
 }
