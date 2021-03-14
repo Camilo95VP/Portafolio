@@ -51,7 +51,7 @@ main
 }
 }
 .container{
-  right: 50px;
+  right: 60px;
   position: absolute;
   top: 135px;
 }
@@ -289,5 +289,22 @@ main {
 .icons a:hover {
   color: white;
   text-shadow: 0 0 30px white;
+}
+.footer{
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+.footer a{
+  text-decoration: none;
+  color: black;
+}
+h3{
+  font-size: 10px;
 }
 
