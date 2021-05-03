@@ -103,15 +103,18 @@ body {
   background-image: url(imgs-proyectos/frontstore.png);
 }
 .card:nth-child(3):before {
-  background-image: url(imgs-proyectos/blogcafe.png);
-}
-.card:nth-child(4):before {
   background-image: url(imgs-proyectos/FCC.png);
 }
+.card:nth-child(4):before {
+  background-image: url(imgs-proyectos/blogcafe.png);
+}
 .card:nth-child(5):before {
-  background-image: url(imgs-proyectos/pokemon.png);
+  background-image: url(imgs-proyectos/reloj.png);
 }
 .card:nth-child(6):before {
+  background-image: url(imgs-proyectos/pokemon.png);
+}
+.card:nth-child(7):before {
   background-image: url(imgs-proyectos/bank.png);
 }
 
