@@ -53,7 +53,7 @@ main
 .container{
   right: 60px;
   position: absolute;
-  top: 115px;
+  top: 170px;
 }
 main {
   background: linear-gradient(to bottom, var(--gradDark), var(--gradLight));
