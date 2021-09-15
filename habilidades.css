@@ -3,7 +3,8 @@
   box-sizing: border-box;
 }
 body {
-  background: linear-gradient( #FFE53B 0%, #fd3838);
+  /*background: linear-gradient( #FFE53B 0%, #fd3838);*/
+  background-image: linear-gradient( #b9b9b9 0%, #424242);
   min-height: 100vh;
   font-family: "Fira Sans", sans-serif;
 }
