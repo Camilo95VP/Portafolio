@@ -12,7 +12,7 @@
 }
 body {
   /*background-image: linear-gradient( #FFE53B 0%, #fd3838);*/
-  background-image: linear-gradient( #b9b9b9 0%, #424242);
+  background-color: #E0E5EC;
 }
 .page-content {
   display: grid;
@@ -64,8 +64,8 @@ body {
   width: 100%;
   text-align: center;
   color: whitesmoke;
-  background-color: whitesmoke;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+  background-color: #E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163 177 198 / 60%), -9px -9px 16px rgb(255 255 255 / 50%);
 }
 @media (min-width: 600px) {
   .card {
