@@ -4,10 +4,11 @@
 }
 body {
   /*background: linear-gradient( #FFE53B 0%, #fd3838);*/
-  background-image: linear-gradient( #b9b9b9 0%, #424242);
+  /*background-image: linear-gradient( #e2e2e2 10%, #000000);*/
   min-height: 100vh;
   font-family: "Fira Sans", sans-serif;
   display: block;
+  background-color: #E0E5EC;
 }
 
 .blog-slider {
@@ -16,8 +17,8 @@ body {
   max-width: 800px;
   margin: 0 auto;
   top: 70px;
-  background: #fff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.4);
+  background: #E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163 177 198 / 60%), -9px -9px 16px rgb(255 255 255 / 50%);
   padding: 25px;
   border-radius: 25px;
   height: 490px;
@@ -122,8 +123,8 @@ body {
 .blog-slider__img {
   width: 300px;
   flex-shrink: 0;
-  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
-  box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+  /*background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);*/
+  box-shadow: 9px 9px 16px rgb(163 177 198 / 60%), -9px -9px 16px rgb(255 255 255 / 50%);
   border-radius: 20px;
   transform: translateX(-80px);
   overflow: hidden;
@@ -207,16 +208,19 @@ body {
 }
 .blog-slider__button {
   display: inline-flex;
-  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
-  box-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
+  background-color: #E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163 177 198 / 60%), -9px -9px 16px rgb(255 255 255 / 50%);
   padding: 15px 35px;
   border-radius: 50px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-
+  font-weight: bold;
   justify-content: center;
   text-align: center;
   letter-spacing: 1px;
+}
+.blog-slider__button:hover{
+  box-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgb(94 104 121 / 69%);
 }
 @media screen and (max-width: 576px) {
   .blog-slider__button {
@@ -313,8 +317,8 @@ position: relative;
 top: 30px;
 }
 .icons a:hover {
-color: white;
-text-shadow: 0 0 30px white;
+color: #fe8a39;
+text-shadow: 0 0 30px #fd3838;
 }
 .cont-icons a{
   margin-top: 60px;
@@ -339,6 +343,7 @@ color: rgb(255, 255, 255);
     margin-top: 400px;
   }
 }
+
 .fa-facebook{
   color:  #3b5998;
 }
@@ -360,7 +365,7 @@ color: rgb(255, 255, 255);
   margin: 0 auto;
   align-items: center;
   text-align: center;
-  top: 650px;
+  top: 706px;
   position: fixed;
   right: 0;
   left: 0;
@@ -376,5 +381,6 @@ color: rgb(255, 255, 255);
   color: black;
 }
 .arrows i:hover{
-  text-shadow: 0 0 30px white
+  color: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgb(94 104 121 / 69%);
+text-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgb(94 104 121 / 69%);
 }

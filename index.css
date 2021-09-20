@@ -8,8 +8,8 @@
 body {
   margin: 0;
   font-family: "Fira Sans", sans-serif;
-  background-color: #aaaaaa;
-  background-image: linear-gradient( #b9b9b9 0%, #424242);
+  background-color: #E0E5EC;
+  
 }
 
 
@@ -19,7 +19,18 @@ main
   
   color: var(--text, black);
 }
-
+.btn2:hover{
+  box-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgb(94 104 121 / 69%);
+    background-color: #E0E5EC;
+}
+.btn:hover{
+  box-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgb(94 104 121 / 69%);
+    background-color: #E0E5EC;
+}
+  .boton:hover{
+    box-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgb(94 104 121 / 69%);
+    background-color: #E0E5EC;
+  }
 @media only screen and (min-width:500px) and (max-width:2080px){
   .container{
     left: 100px;
@@ -88,7 +99,7 @@ main {
 	color: rgba(0, 0, 0, 0.9);
 	border-radius: 50px;
  /* background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);*/
- background-color: #fff;
+ background-color: #E0E5EC;
 	background-size: 600%;
 	-webkit-animation: anime 16s linear infinite;
 			animation: anime 16s linear infinite;
@@ -97,10 +108,10 @@ main {
       
       transition: all 0.2s ease-in-out;
   color: rgb(0, 0, 0) !important;
-  box-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
-
+ 
+  box-shadow: 9px 9px 16px rgb(163 177 198 / 60%), -9px -9px 16px rgb(255 255 255 / 50%);
   }
-
+  
   .about{
     transition: all 1s;
   }
